@@ -9,7 +9,7 @@ year_of_interest = 2021
 month_of_interest = 12
 product = 'Booster mit BioNTech'
 
-appointments = requests.get(url).json()
+appointments = requests.get(url_vaccination_center_Kassel).json()
 
 if appointments != None:
     if str(year_of_interest) in appointments.keys():
